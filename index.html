@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mina Shenouda - Junior .NET Backend Developer</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #f2f3f5;
+            color: #202124;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+        }
+
+        .cv {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 25px auto;
+            padding: 18mm 17mm;
+            background: white;
+            box-shadow: 0 3px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .header {
+            text-align: center;
+            padding-bottom: 14px;
+            border-bottom: 2px solid #222;
+        }
+
+        .name {
+            margin: 0;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+        }
+
+        .title {
+            margin: 5px 0 8px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+            font-size: 10.5px;
+        }
+
+        .contact a {
+            color: #174f91;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            font-weight: 600;
+        }
+
+        .contact a:hover,
+        .contact a:focus-visible {
+            color: #0b3566;
+        }
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        .section {
+            margin-top: 16px;
+        }
+
+        .section-title {
+            margin: 0 0 7px;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #777;
+            font-size: 12.5px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin: 0;
+            font-size: 10.5px;
+        }
+
+        /* =========================
+           SKILLS
+        ========================= */
+
+        .skills {
+            font-size: 10.5px;
+        }
+
+        .skill-row {
+            margin-bottom: 4px;
+        }
+
+        .skill-label {
+            font-weight: 700;
+        }
+
+        /* =========================
+           PROJECTS
+        ========================= */
+
+        .project {
+            margin-bottom: 10px;
+        }
+
+        .project:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            align-items: baseline;
+        }
+
+        .project-name {
+            font-size: 11.5px;
+            font-weight: 700;
+        }
+
+        .project-tech {
+            font-size: 9.5px;
+            color: #444;
+            font-style: italic;
+        }
+
+        .project-description {
+            margin-top: 2px;
+            font-size: 10px;
+        }
+
+        /* =========================
+           EDUCATION / TRAINING
+        ========================= */
+
+        .entry {
+            margin-bottom: 8px;
+        }
+
+        .entry-title {
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .entry-details {
+            font-size: 10px;
+        }
+
+        /* =========================
+           LISTS
+        ========================= */
+
+        ul {
+            margin: 4px 0 0 18px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 3px;
+            font-size: 10px;
+        }
+
+        /* =========================
+           PRINT
+        ========================= */
+
+        @media print {
+
+            @page {
+                size: A4;
+                margin: 9mm 11mm;
+            }
+
+            body {
+                background: white;
+                line-height: 1.36;
+            }
+
+            .cv {
+                width: auto;
+                min-height: 0;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+            }
+
+            .section {
+                margin-top: 10px;
+            }
+
+            .project {
+                margin-bottom: 5px;
+            }
+
+            .entry {
+                margin-bottom: 4px;
+            }
+
+            li {
+                margin-bottom: 1px;
+            }
+
+            .contact a {
+                color: #174f91 !important;
+                text-decoration: underline !important;
+                text-underline-offset: 2px;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .cv {
+                width: calc(100% - 20px);
+                margin: 10px;
+                padding: 25px;
+            }
+
+            .project-header {
+                display: block;
+            }
+
+            .project-tech {
+                display: block;
+                margin-top: 2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="cv">
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header class="header">
+
+        <h1 class="name">
+            Mina Shenouda
+        </h1>
+
+        <div class="title">
+            Junior .NET Backend Developer
+        </div>
+
+        <div class="contact">
+
+            <span>Cairo, Egypt</span>
+
+            <span>
+                <a href="mailto:menashenoudamena5@gmail.com">
+                    menashenoudamena5@gmail.com
+                </a>
+            </span>
+
+            <span>
+                <a href="https://www.linkedin.com/in/mina-shenouda-21918238"
+                   target="_blank" rel="noopener noreferrer">
+                    LinkedIn: linkedin.com/in/mina-shenouda-21918238
+                </a>
+            </span>
+
+            <span>
+                <a href="https://github.com/Mina41160" target="_blank" rel="noopener noreferrer">GitHub: github.com/Mina41160</a>
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         PROFESSIONAL SUMMARY
+    ========================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Professional Summary
+        </h2>
+
+        <p>
+            Computer Science student at Benha University focused on backend
+            development with .NET. Hands-on experience building practical,
+            database-driven applications using C#, ASP.NET Core MVC,
+            Entity Framework Core, SQL Server, and LINQ. Strong foundation
+            in Object-Oriented Programming, Data Structures, Algorithms,
+            SQL, and System Analysis. Interested in building maintainable
+            software that turns real requirements and workflows into
+            working applications.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         TECHNICAL SKILLS
+    ========================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Technical Skills
+        </h2>
+
+        <div class="skills">
+
+            <div class="skill-row">
+                <span class="skill-label">Programming Languages:</span>
+                C#, C++, SQL
+            </div>
+
+            <div class="skill-row">
+                <span class="skill-label">Backend & Web:</span>
+                ASP.NET Core MVC, Entity Framework Core, LINQ
+            </div>
+
+            <div class="skill-row">
+                <span class="skill-label">Databases:</span>
+                SQL Server, Relational Database Design, Code First, Migrations
+            </div>
+
+            <div class="skill-row">
+                <span class="skill-label">Programming Concepts:</span>
+                OOP, Data Structures, Algorithms, Exception Handling, Validation
+            </div>
+
+            <div class="skill-row">
+                <span class="skill-label">Software & Tools:</span>
+                Visual Studio, SQL Server Management Studio, Git, GitHub
+            </div>
+
+            <div class="skill-row">
+                <span class="skill-label">System Analysis:</span>
+                Requirements Analysis, ERD, DFD, Database Relationships
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECTS
+    ========================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Projects
+        </h2>
+
+
+        <!-- Project 1 -->
+
+        <div class="project">
+
+            <div class="project-header">
+
+                <div class="project-name">
+                    Clinic Management System MVC
+                </div>
+
+                <div class="project-tech">
+                    ASP.NET Core MVC | C# | EF Core | SQL Server
+                </div>
+
+            </div>
+
+            <div class="project-description">
+                Built a Code First clinic management application using
+                ASP.NET Core MVC and Entity Framework Core. Implemented
+                CRUD operations, model validation, database migrations,
+                foreign-key relationships, and Entity Framework Core
+                data access for clinic entities.
+            </div>
+
+        </div>
+
+
+        <!-- Project 2 -->
+
+        <div class="project">
+
+            <div class="project-header">
+
+                <div class="project-name">
+                    Smart Car Rental System
+                </div>
+
+                <div class="project-tech">
+                    C# | Object-Oriented Programming
+                </div>
+
+            </div>
+
+            <div class="project-description">
+                Developed a console-based car rental system implementing
+                rental and return workflows, customer and vehicle
+                management, generated identifiers, validation,
+                exception handling, and late-fee calculation.
+            </div>
+
+        </div>
+
+
+        <!-- Project 3 -->
+
+        <div class="project">
+
+            <div class="project-header">
+
+                <div class="project-name">
+                    Cargo Management System
+                </div>
+
+                <div class="project-tech">
+                    C# | OOP
+                </div>
+
+            </div>
+
+            <div class="project-description">
+                Developed a console application using encapsulation,
+                constructors, properties, validation, and business
+                logic for cargo and shipping operations.
+            </div>
+
+        </div>
+
+
+        <!-- Project 4 -->
+
+        <div class="project">
+
+            <div class="project-header">
+
+                <div class="project-name">
+                    Company Data Query Set
+                </div>
+
+                <div class="project-tech">
+                    SQL Server | LINQ
+                </div>
+
+            </div>
+
+            <div class="project-description">
+                Practiced relational business queries using employees,
+                departments, projects, and dependents. Applied filtering,
+                joins, grouping, ordering, aggregate functions, and
+                multi-table relationships.
+            </div>
+
+        </div>
+
+
+        <!-- Project 5 -->
+
+        <div class="project">
+
+            <div class="project-header">
+
+                <div class="project-name">
+                    Banking System
+                </div>
+
+                <div class="project-tech">
+                    System Analysis | ERD | DFD
+                </div>
+
+            </div>
+
+            <div class="project-description">
+                Worked on an academic banking system covering requirements
+                analysis, system modeling, entity relationships, process
+                modeling, and team-based project planning.
+            </div>
+
+        </div>
+
+
+        <!-- Project 6 -->
+
+        <div class="project">
+
+            <div class="project-header">
+
+                <div class="project-name">
+                    ATM System
+                </div>
+
+                <div class="project-tech">
+                    ERD | Database Design
+                </div>
+
+            </div>
+
+            <div class="project-description">
+                Designed Customer, Account, ATM, and Transaction entities
+                and mapped primary-key, foreign-key, and one-to-many
+                relationships into a relational database model.
+            </div>
+
+        </div>
+
+
+        <!-- Project 7 -->
+
+        <div class="project">
+
+            <div class="project-header">
+
+                <div class="project-name">
+                    Weather Forecasting System
+                </div>
+
+                <div class="project-tech">
+                    Requirements Analysis | Planning | Data Mining
+                </div>
+
+            </div>
+
+            <div class="project-description">
+                Worked on requirements analysis, current-system study,
+                resource planning, risk management, and proposed
+                data-driven forecasting components.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         EDUCATION
+    ========================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Education
+        </h2>
+
+        <div class="entry">
+
+            <div class="entry-title">
+                Benha University — Faculty of Computers and Artificial Intelligence
+            </div>
+
+            <div class="entry-details">
+                Bachelor’s Degree, Computer Science | 2024 – 2028
+            </div>
+
+            <div class="entry-details">
+                Cumulative GPA: 3.06 / 4.00
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROFESSIONAL TRAINING
+    ========================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Professional Training
+        </h2>
+
+
+        <div class="entry">
+
+            <div class="entry-title">
+                Digital Egypt Pioneers Initiative (DEPI)
+            </div>
+
+            <div class="entry-details">
+                Full Stack .NET Development | 2026 – Present
+            </div>
+
+        </div>
+
+
+        <div class="entry">
+
+            <div class="entry-title">
+                Information Technology Institute (ITI)
+            </div>
+
+            <div class="entry-details">
+                Professional Training | Completed, 2026
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ACHIEVEMENTS
+    ========================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Achievements & Activities
+        </h2>
+
+        <ul>
+
+            <li>
+                ICBC Competition — Level 1: participated in programming
+                and problem-solving activities.
+            </li>
+
+            <li>
+                DEPI Round 5: selected for a structured Full Stack .NET
+                learning path focused on practical development.
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- =========================
+         ADDITIONAL INFORMATION
+    ========================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Additional Information
+        </h2>
+
+        <ul>
+
+            <li>
+                Interested in Backend Development and Software Engineering.
+            </li>
+
+            <li>
+                Interested in building practical database-driven applications.
+            </li>
+
+            <li>
+                Open to junior software development, backend, internship,
+                and freelance opportunities.
+            </li>
+
+        </ul>
+
+    </section>
+
+</div>
+
+</body>
+</html>
